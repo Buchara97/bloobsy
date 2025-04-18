@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bloobsy</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Bloobsy</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: url('background.png') repeat center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .cassette {
+      width: 300px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .cassette:hover {
+      transform: scale(0.95);
+    }
+
+    .socials {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .socials a img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .socials a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-    <div class="background-noise"></div>
-    <div class="container">
-        <img src="assets/cassette.png" class="cassette glitch" alt="VHS Cassette" />
-        <div class="socials">
-            <a href="https://instagram.com/Bloobsycom" target="_blank"><img src="assets/insta.png" alt="Instagram" /></a>
-            <a href="https://x.com/Bloobsycom" target="_blank"><img src="assets/x.png" alt="X" /></a>
-            <a href="https://tiktok.com/@Bloobsycom" target="_blank"><img src="assets/tiktok.png" alt="TikTok" /></a>
-            <a href="https://discord.gg/Bloobsycom" target="_blank"><img src="assets/discord.png" alt="Discord" /></a>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-</html>
+  <div class="container">
+    <img
+      src="Don't-play-with-Bubble_CASSETTE.png"
+      alt="Bloobsy Cassette"
+      class="cassette"
+      onclick="window.open('https://instagram.com/bloobsycom', '_blank')"
+    />
+    <div class="socials">
+      <a href="https://instagram.com/bloobsycom" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+      <a href="https://x.com/bloobsycom" target="_blank"><img src="https_
